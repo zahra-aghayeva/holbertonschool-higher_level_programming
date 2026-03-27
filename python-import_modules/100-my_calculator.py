@@ -3,26 +3,22 @@ import sys
 from calculator_1 import add, sub, mul, div
 
 if __name__ == "__main__":
-    # Arqumentlərin sayını yoxlayırıq (fayl adı + 3 arqument = 4)
     if len(sys.argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-        exit(1)
+        sys.exit(1)
 
     a = int(sys.argv[1])
     operator = sys.argv[2]
     b = int(sys.argv[3])
 
-    # Operatora uyğun funksiyanı seçirik
     if operator == '+':
-        result = add(a, b)
+        print("{} {} {} = {}".format(a, operator, b, add(a, b)))
     elif operator == '-':
-        result = sub(a, b)
+        print("{} {} {} = {}".format(a, operator, b, sub(a, b)))
     elif operator == '*':
-        result = mul(a, b)
+        print("{} {} {} = {}".format(a, operator, b, mul(a, b)))
     elif operator == '/':
-        result = div(a, b)
+        print("{} {} {} = {}".format(a, operator, b, div(a, b)))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
-        exit(1)
-
-    print("{} {} {} = {}".format(a, operator, b, result))
+        sys.exit(1)
