@@ -9,9 +9,11 @@ def roman_to_int(roman_string):
     }
     num = 0
     for i in range(len(roman_string)):
-        current_val = roman_dict.get(roman_string[i], 0)
-        if i + 1 < len(roman_string) and roman_dict.get(roman_string[i + 1], 0) > current_val:
-            num -= current_val
+        val = roman_dict.get(roman_string[i], 0)
+        next_val = roman_dict.get(roman_string[i + 1], 0) if i + 1 < len(
+            roman_string) else 0
+        if next_val > val:
+            num -= val
         else:
-            num += current_val
+            num += val
     return num
