@@ -6,9 +6,9 @@ class Square:
     """Kvadratı təmsil edən sinif."""
 
     def __init__(self, size):
-        """Kvadratı müəyyən ölçü ilə başladır.
+        """Kvadrat obyekti yaradılır.
 
         Args:
-            size (int): Kvadratın tərəfinin ölçüsü.
+            size: Kvadratın tərəfinin ölçüsü.
         """
         self.__size = size
