@@ -11,3 +11,4 @@ class Square:
     Currently, it has no attributes or methods.
     """
     pass
+
