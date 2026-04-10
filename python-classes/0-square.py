@@ -1,13 +1,7 @@
 #!/usr/bin/python3
-"""
-This module defines a Square class.
-It serves as an introduction to Object Oriented Programming.
-"""
+"""Defines a class Square."""
 
 
 class Square:
-    """
-    An empty class Square that defines a square.
-    Currently, it has no attributes or methods.
-    """
+    """An empty class Square that defines a square."""
     pass
