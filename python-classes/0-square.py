@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
-Bu modul Square sinfini təyin edir.
-Modul daxilində kvadratlarla bağlı əməliyyatlar aparılır.
+This module defines a Square class.
+It serves as an introduction to Object Oriented Programming.
 """
 
 
 class Square:
     """
-    Kvadratı təmsil edən boş bir sinif.
-    Hələlik heç bir atribut və ya metodu yoxdur.
+    An empty class Square that defines a square.
+    Currently, it has no attributes or methods.
     """
     pass
